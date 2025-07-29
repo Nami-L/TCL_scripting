@@ -1,4 +1,5 @@
 set f [open "labs/bitstream.bit" r]
+fconfigure $fid -translation binary
 set bitstream [read $f]
 close $f
 proc get_filename {bistream} {
